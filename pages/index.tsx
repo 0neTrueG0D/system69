@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                 </div>
             </div>
             <h1 className='py-1 text-white font-bold text-center bg-blue-400'>
-                ADDMEN
+                IDK WHATS USE OF THIS STUPID THING
             </h1>
         </div>
     </div>
