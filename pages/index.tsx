@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
-    <div className='container'>
+    <div className=''>
         <Head>
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           
             <div className='grid grid-cols-1 md:grid-cols-12 gap-0 '>
                 <div className='col-span-9 mx-1'>
-                    <div className='flex flex-row bg-white border-b-2 border-gray-300 text-white'>
+                    <div className='flex flex-row bg-white border-b-2 border-gray-300 text-white overflow-auto'>
                         <button className='py-0 px-3 md:px-8 m-1 bg-blue-800 rounded-sm cursor-pointer'>
                           ALL SECTIONS
                         </button>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-row bg-white text-white'>
+                    <div className='flex flex-row overflow-auto bg-white text-white'>
                         <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
                           CLEAR
                         </button>
