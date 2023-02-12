@@ -4,81 +4,146 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className='container'>
+        <Head>
+            <title>Create Next App</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+        <div className='w-screen'>
+            <h1 className='py-2 text-white font-bold text-xl text-center bg-blue-400'>
+                DEMO ONLINE TEST
+            </h1>
+          
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-0 '>
+                <div className='col-span-9 mx-1'>
+                    <div className='flex flex-row bg-white border-b-2 border-gray-300 text-white'>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-800 rounded-sm cursor-pointer'>
+                          ALL SECTIONS
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          PHYSICS
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          CHEMISTRY
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          MATHS
+                        </button>
+                    </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+                    <div className='shadow-lg text-white border-gray-300 border-2 m-1 rounded-md'>
+                        <div className='flex flex-row justify-between px-2 bg-blue-400 border-b-2 border-gray-300 rounded-t-sm'>
+                          <h1 className='font-bold'> Q No. : <span> 1 </span> </h1>
+                          <div>
+                              <label htmlFor="lang" className='font-bold'> View in:</label>
+                              <select name="lang" id="lang" className='text-black px-2 mx-1 rounded-sm'>
+                                <option value="english"> English </option>
+                                <option value="hindi"> Hindi </option>
+                              </select>
+                          </div>
+                        </div>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
+                        <div className='grid grid-cols-1 md:grid-cols-2 bg-white text-black'>
+                            <div className='col-span-1 p-1 md:border-r-[1px] border-gray-300'>
+                                <h3 className='text-blue-800'>
+                                  QUESTION INSTRUCTION
+                                </h3>
+                                <p>
+                                You are given n permutations a1,a2,…,an, each of length m. Recall that a permutation of length m is a sequence of m distinct integers from 1 to m.
+                                Let the beauty of a permutation p1,p2,…,pm
+                                be the largest k such that p1=1,p2=2,…,pk=k. If p1≠1, then the beauty is 0.
+                                The product of two permutations p⋅q
+                                is a permutation r such that rj=qpj.
+                                For each i
+                                from 1 to n, print the largest beauty of a permutation ai⋅aj over all j from 1 to n (possibly, i=j).
+                                </p>
+                            </div>
+                            <div className='col-span-1 p-1'>
+                                <h3 className='text-blue-800'>
+                                  QUESTION
+                                </h3>
+                                
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-row bg-white text-white'>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          CLEAR
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          REVIEW
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          DUMP
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-400 rounded-sm cursor-pointer'>
+                          PREVIOUS
+                        </button>
+                        <button className='py-0 px-3 md:px-8 m-1 bg-blue-800 rounded-sm cursor-pointer'>
+                          NEXT
+                        </button>
+                    </div>
+                </div>
+                <div className='col-span-3'>
+                    <div className='flex flex-col'>
+                        <div className='flex flex-row text-black border-2 border-gray-300 my-1 mx-2 rounded-md shadow-lg bg-teal-100'>
+                            <img src="/user.png" alt="profilepic" height="" width="100px" className='m-1 object-cover'/>
+                            <div className='i items-center my-auto'>
+                              <h3>Time left: <span>2:50</span></h3>
+                              <h3>User Name</h3>
+                            </div>
+                        </div>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+                        <div className='text-black border-2 h-64 md:h-80 lg:h-96 border-gray-300 my-1 mx-2 rounded-md shadow-lg bg-teal-100'>
+                            <h3 className='bg-blue-400 px-2 rounded-t-sm text-white'>
+                              Question Pallete
+                            </h3>
+                            <div className='grid grid-cols-5'>
+                              {[...Array(10)].map((_, x) => (
+                                <p className='text-center m-1 rounded bg-red-500'>{x+1}</p>
+                              ))}
+                            </div>
+                        </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+                        <div className='text-black border-2 border-gray-300 my-1 mx-2 rounded-md shadow-lg bg-teal-100'>
+                            <h3 className='bg-blue-400 px-2 rounded-t-sm text-white'>
+                              Legend (Click to View)
+                            </h3>
+                            <div className='grid grid-cols-2'>
+                                <p className='text-left m-[1px] px-2 bg-green-500'>4 Answered</p>
+                                <p className='text-left m-[1px] px-2 bg-red-500'>2 Not Answered</p>
+                                <p className='text-left m-[1px] px-2 bg-purple-500'>2 Review + Ans</p>
+                                <p className='text-left m-[1px] px-2 bg-yellow-200'>2 Review - Ans</p>
+                                <p className='text-left m-[1px] px-2 bg-gray-400'>1 Dump</p>
+                                <p className='text-left m-[1px] px-2 bg-gray-200'>1 Not Visited</p>
+                            </div>
+                            <p className='text-center m-[1px] px-2 bg-blue-400'>10 Total Questions</p>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+                            <div className='grid grid-cols-2 my-4 text-white'>
+                                <button className='py-1 px-3 md:px-8 m-[2px] bg-blue-400 rounded-sm cursor-pointer'>
+                                  Profile
+                                </button>
+                                <button className='py-1 px-3 md:px-8 m-[2px] bg-blue-400 rounded-sm cursor-pointer'>
+                                  Instr
+                                </button>
+                                <button className='py-1 px-3 md:px-8 m-[2px] bg-blue-400 rounded-sm cursor-pointer'>
+                                  Questions
+                                </button>
+                                <button className='py-1 px-3 md:px-8 m-[2px] bg-blue-400 rounded-sm cursor-pointer'>
+                                  Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 className='py-1 text-white font-bold text-center bg-blue-400'>
+                ADDMEN
+            </h1>
         </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
     </div>
   )
 }
